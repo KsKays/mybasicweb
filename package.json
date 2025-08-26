@@ -15,6 +15,9 @@
     "test:visual": "node test-runner.js visual",
     "test:db": "node test-runner.js db",
     "test:perf": "node test-runner.js perf",
+    "test:video-on": "cross-env PLAYWRIGHT_VIDEO_MODE=on playwright test",
+    "test:video-off": "cross-env PLAYWRIGHT_VIDEO_MODE=off playwright test",
+    "test:video-high": "cross-env PLAYWRIGHT_VIDEO_MODE=high playwright test",
     "test:report": "playwright show-report",
     "test:install": "playwright install"
   },
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
-    "@playwright/test": "^1.40.0"
+    "@playwright/test": "^1.40.0",
+    "cross-env": "^7.0.3"
   }
 }

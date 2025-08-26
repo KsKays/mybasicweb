@@ -27,8 +27,18 @@ module.exports = defineConfig({
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
     
-    /* Record video on failure */
-    video: 'retain-on-failure',
+    /* Record video settings - Enhanced configuration */
+    video: {
+      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
+      size: { width: 1280, height: 720 } // Set video resolution
+    },
+    
+    /* Additional video options */
+    // Uncomment below to record ALL tests (warning: creates many video files)
+    // video: 'on',
+    
+    /* Video directory (optional - defaults to test-results) */
+    // outputDir: './test-results',
   },
 
   /* Configure projects for major browsers */
