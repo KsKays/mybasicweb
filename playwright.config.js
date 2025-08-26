@@ -27,15 +27,14 @@ module.exports = defineConfig({
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
     
-    /* Record video settings - Enhanced configuration */
+    /* Record video settings - Enhanced configuration for Coffee Tests */
     video: {
-      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
+      mode: 'on',  // Record video for ALL tests
       size: { width: 1280, height: 720 } // Set video resolution
     },
     
     /* Additional video options */
-    // Uncomment below to record ALL tests (warning: creates many video files)
-    // video: 'on',
+    // Video recording is now enabled for all tests
     
     /* Video directory (optional - defaults to test-results) */
     // outputDir: './test-results',
@@ -48,25 +47,25 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
-    /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] },
-    },
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
+    // /* Test against mobile viewports. */
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // },
 
     /* Test against branded browsers. */
     // {
