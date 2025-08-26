@@ -39,33 +39,6 @@ module.exports = defineConfig({
     
     /* Video directory (optional - defaults to test-results) */
     // outputDir: './test-results',
->>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
-    /* Record video settings - Enhanced configuration */
-    video: {
-      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
-      size: { width: 1280, height: 720 } // Set video resolution
-    },
-    
-    /* Additional video options */
-    // Uncomment below to record ALL tests (warning: creates many video files)
-    // video: 'on',
-    
-    /* Video directory (optional - defaults to test-results) */
-    // outputDir: './test-results',
-=======
-    /* Record video settings - Enhanced configuration */
-    video: {
-      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
-      size: { width: 1280, height: 720 } // Set video resolution
-    },
-    
-    /* Additional video options */
-    // Uncomment below to record ALL tests (warning: creates many video files)
-    // video: 'on',
-    
-    /* Video directory (optional - defaults to test-results) */
-    // outputDir: './test-results',
->>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
   },
 
   /* Configure projects for major browsers */
