@@ -27,27 +27,45 @@ module.exports = defineConfig({
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
     
-    /* Enhanced Video Recording Configuration */
+    /* Record video settings - Enhanced configuration */
     video: {
-      mode: process.env.PLAYWRIGHT_VIDEO_MODE === 'off' ? 'off' :
-            process.env.PLAYWRIGHT_VIDEO_MODE === 'on' ? 'on' :
-            process.env.PLAYWRIGHT_VIDEO_MODE === 'high' ? 'on' :
-            process.env.PLAYWRIGHT_VIDEO_MODE === 'retry-only' ? 'on-first-retry' :
-            'retain-on-failure',  // Default: only keep videos of failed tests
-      
-      size: process.env.PLAYWRIGHT_VIDEO_MODE === 'high' ? 
-            { width: 1920, height: 1080 } :  // High quality for detailed analysis
-            { width: 1280, height: 720 }     // Standard quality for regular use
+      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
+      size: { width: 1280, height: 720 } // Set video resolution
     },
     
-    /* Video directory with organized structure */
-    outputDir: './test-results',
+    /* Additional video options */
+    // Uncomment below to record ALL tests (warning: creates many video files)
+    // video: 'on',
     
-    /* Additional debugging options when video is enabled */
-    ...(process.env.PLAYWRIGHT_VIDEO_MODE === 'on' && {
-      actionTimeout: 10000,      // More time for actions when recording
-      navigationTimeout: 30000   // More time for navigation when recording
-    }),
+    /* Video directory (optional - defaults to test-results) */
+    // outputDir: './test-results',
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
+    /* Record video settings - Enhanced configuration */
+    video: {
+      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
+      size: { width: 1280, height: 720 } // Set video resolution
+    },
+    
+    /* Additional video options */
+    // Uncomment below to record ALL tests (warning: creates many video files)
+    // video: 'on',
+    
+    /* Video directory (optional - defaults to test-results) */
+    // outputDir: './test-results',
+=======
+    /* Record video settings - Enhanced configuration */
+    video: {
+      mode: 'retain-on-failure',  // Options: 'off', 'on', 'retain-on-failure', 'on-first-retry'
+      size: { width: 1280, height: 720 } // Set video resolution
+    },
+    
+    /* Additional video options */
+    // Uncomment below to record ALL tests (warning: creates many video files)
+    // video: 'on',
+    
+    /* Video directory (optional - defaults to test-results) */
+    // outputDir: './test-results',
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
   },
 
   /* Configure projects for major browsers */

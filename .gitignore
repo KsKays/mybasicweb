@@ -1,3 +1,94 @@
+# Database
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
+*.db
+*.sqlite
+*.sqlite3
+
+<<<<<<< HEAD
+# Test reports and results
+playwright-report/
+test-results/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+<<<<<<< HEAD
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build outputs
+dist/
+build/
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
 # Dependencies
 node_modules/
 npm-debug.log*
@@ -9,10 +100,14 @@ yarn-error.log*
 *.sqlite
 *.sqlite3
 
-# Test reports and results
-playwright-report/
+# Playwright
 test-results/
+playwright-report/
+playwright/.cache/
+
+# Coverage directory used by tools like istanbul
 coverage/
+*.lcov
 
 # Environment variables
 .env
@@ -56,3 +151,101 @@ pids
 # Build outputs
 dist/
 build/
+
+# Temporary files
+*.tmp
+*.temp
+=======
+# Database
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
+*.db
+*.sqlite
+*.sqlite3
+
+<<<<<<< HEAD
+# Test reports and results
+playwright-report/
+test-results/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+=======
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+<<<<<<< HEAD
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build outputs
+dist/
+build/
+=======
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+>>>>>>> 3ab19d4021c7b534f43df436331ba6c899cadaab
