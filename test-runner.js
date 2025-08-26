@@ -97,6 +97,21 @@ function main() {
       runCommand('npx playwright test --ui', 'UI Mode');
       break;
 
+    case 'video-on':
+      log('Running tests with video recording enabled...', 'yellow');
+      runCommand('PLAYWRIGHT_VIDEO_MODE=on npx playwright test', 'Video Recording Tests');
+      break;
+
+    case 'video-off':
+      log('Running tests with video recording disabled...', 'yellow');
+      runCommand('PLAYWRIGHT_VIDEO_MODE=off npx playwright test', 'No Video Tests');
+      break;
+
+    case 'video-high':
+      log('Running tests with high quality video recording...', 'yellow');
+      runCommand('PLAYWRIGHT_VIDEO_MODE=high npx playwright test', 'High Quality Video Tests');
+      break;
+
     case 'report':
       log('Opening test report...', 'yellow');
       runCommand('npx playwright show-report', 'Test Report');
@@ -134,6 +149,13 @@ function showHelp() {
   log('  headed            Run tests with visible browser', 'yellow');
   log('  debug             Run tests in debug mode', 'yellow');
   log('  ui                Open Playwright UI mode', 'yellow');
+  log('');
+  log('📹 Video Recording Options:', 'blue');
+  log('  video-on          Run tests with video recording ON', 'yellow');
+  log('  video-off         Run tests with video recording OFF', 'yellow');
+  log('  video-high        Run tests with high quality video', 'yellow');
+  log('');
+  log('🛠️  Utility Commands:', 'blue');
   log('  report            Open test report', 'yellow');
   log('  install           Install Playwright browsers', 'yellow');
   log('  help, --help, -h  Show this help message', 'yellow');
@@ -142,6 +164,7 @@ function showHelp() {
   log('  node test-runner.js form', 'green');
   log('  node test-runner.js api', 'green');
   log('  node test-runner.js headed', 'green');
+  log('  node test-runner.js video-on', 'green');
   log('  node test-runner.js debug', 'green');
 }
 
